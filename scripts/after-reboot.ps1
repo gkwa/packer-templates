@@ -1,5 +1,4 @@
 $ProgressPreference='SilentlyContinue'
-Get-WUInstall -WindowsUpdate -AcceptAll -UpdateType Software -IgnoreReboot
 
 # The sleeps may seem whacky because they are
 # Might beable to remove after 2016 RTMs
