@@ -34,7 +34,6 @@
         "wsus-client::configure",
         "packer-templates::install_ps_modules",
         "packer-templates::vbox_guest_additions",
-        "packer-templates::uninstall_powershell_ise",
         "packer-templates::delete_pagefile"
       ]
     },
