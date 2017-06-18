@@ -2,6 +2,7 @@
     "builders": [{
     "type": "virtualbox-iso",
     "vboxmanage": [
+      [ "modifyvm", "{{.Name}}", "--natpf1", "guestwinrm,tcp,127.0.0.1,5985,,5985" ],
       [ "modifyvm", "{{.Name}}", "--memory", "5120" ],
       [ "modifyvm", "{{.Name}}", "--vram", "36" ],
       [ "modifyvm", "{{.Name}}", "--cpus", "2" ]
