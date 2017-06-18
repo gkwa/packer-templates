@@ -6,6 +6,7 @@
         [ "modifyvm", "{{.Name}}", "--natnet1", "10.0.5/24" ],
         [ "modifyvm", "{{.Name}}", "--memory", "5048" ],
         [ "modifyvm", "{{.Name}}", "--vram", "48" ],
+        [ "modifyvm", "{{.Name}}", "--natpf1", "guestwinrm,tcp,127.0.0.1,5985,,5985" ],
         [ "modifyvm", "{{.Name}}", "--cpus", "2" ]
       ],
       "guest_additions_mode": "{{ user `guest_additions_mode` }}",
